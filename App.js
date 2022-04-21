@@ -19,7 +19,7 @@ app.get('/total', async(req, res) => {
       userID: 1
     },
     group: ['currency'],
-  })
+  });
   res.send(total)
 });
 app.post('/transaction', async(req, res) => {
@@ -31,7 +31,7 @@ app.post('/transaction', async(req, res) => {
       currency: req.body.originalCurrency,
       operation: "deposit"
     }
-  )
+  );
   res.send(trans)
 });
 
